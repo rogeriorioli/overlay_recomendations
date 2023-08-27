@@ -3,7 +3,7 @@ import React from "react";
 
 const ProductSumary = (props: Product) => {
   return (
-    <div className=" w-1/3 flex flex-col justify-between p-2">
+    <div className="lg:w-1/3 flex flex-col justify-between p-2">
       <div>
         <h2 className="font-semibold text-lg text-gray-800">{props.name}</h2>
         <p className="my-2 font-light text-gray-700">{props.description}</p>

@@ -44,9 +44,9 @@ export default function Modal() {
     );
   }
   return (
-    <div className="w-[750px]  bg-gray-100 rounded-md shadow-md p-5">
+    <div className="lg:w-[750px]  bg-gray-100 rounded-md shadow-md p-5">
       <div className="w-full">
-        <div className="flex flex-row">
+        <div className="flex flex-col lg:flex-row ">
           <Slider products={products} />
           <ProductSumary
             id={product.id}

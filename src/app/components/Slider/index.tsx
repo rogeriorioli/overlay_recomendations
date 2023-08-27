@@ -24,7 +24,7 @@ const Slider = ({ products }: Slider) => {
     });
   };
   return (
-    <div className=" w-2/3 flex flex-row">
+    <div className="lg:w-2/3 flex lg:flex-row">
       <div className="w-[80px]">
         {products.map((item: Product) => (
           <div key={item.id} className="my-2">
@@ -41,7 +41,7 @@ const Slider = ({ products }: Slider) => {
       </div>
       <div className="w-full m-2 transition ease-in-out delay-150 ">
         <Image
-          src={`${product.image_url}`}
+          src={product.image_url}
           alt={product.name}
           width={447}
           height={447}
