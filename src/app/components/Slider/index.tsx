@@ -9,9 +9,10 @@ import { useProductContext } from "@/app/context/useProduct";
 
 type Slider = {
   products: Array<Product>;
+  border?: boolean;
 };
 
-const Slider = ({ products }: Slider) => {
+const Slider = ({ products, border }: Slider) => {
   const { product, updateProduct } = useProductContext();
 
   const handleImageRef = (product: Product) => {
@@ -39,7 +40,10 @@ const Slider = ({ products }: Slider) => {
           </div>
         ))}
       </div>
-      <div className="w-full m-2 transition ease-in-out delay-150 ">
+      <div className="w-full m-2 transition ease-in-out delay-150  relative">
+        {border && (
+          <div className="absolute  w-[90%] h-[90%] border-solid border-orange-400 border-2 top-0 bottom-0 left-0 right-0 m-auto" />
+        )}
         <Image
           src={product.image_url}
           alt={product.name}

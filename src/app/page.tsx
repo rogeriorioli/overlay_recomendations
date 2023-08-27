@@ -4,7 +4,7 @@ import { ProductProvider } from "./context/useProduct";
 export default function Home() {
   return (
     <ProductProvider>
-      <main className="flex min-h-screen flex-col items-center justify-center">
+      <main className="flex min-h-screen flex-col items-center justify-center p-4">
         <Modal />
       </main>
     </ProductProvider>
